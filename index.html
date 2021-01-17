@@ -212,7 +212,7 @@
                   // Both GET and POST method is used to transfer data from client to server in HTTP protocol but Main difference between POST and GET method is that GET carries request parameter appended in URL string while POST carries request parameter in message body which makes it more secure way of transferring data from client to server in http protocol.
                   type: "POST",
                   // OMDB API -----> Open Movie Database
-                  url: 'http://www.omdbapi.com/?s='+name+'&apikey=e905fad1',
+                  url: 'https://www.omdbapi.com/?s='+name+'&apikey=e905fad1',
                   // executes a code snippet after a specified delay (in milliseconds).
                   timeout: 0,
                   // if API calling is successful, this function works.
@@ -270,7 +270,7 @@
               //calling an ajax function or an api to get the movie data using title of the movie 
                 $.ajax({
                     type: "POST",
-                    url: 'http://www.omdbapi.com/?t='+title+'&apikey=e905fad1',
+                    url: 'https://www.omdbapi.com/?t='+title+'&apikey=e905fad1',
                     timeout: 2000,
                     success : function(data) {
                       //var obj = jQuery.parseJSON(data);
